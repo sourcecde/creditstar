@@ -25,13 +25,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'personal_code') ?>
 
-    <?php // echo $form->field($model, 'phone') ?>
-
-    <?php // echo $form->field($model, 'active')->checkbox() ?>
-
-    <?php // echo $form->field($model, 'dead')->checkbox() ?>
-
-    <?php // echo $form->field($model, 'lang') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

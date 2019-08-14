@@ -37,21 +37,7 @@ AppAsset::register($this);
             'class' => 'navbar-inverse logo',
         ],
     ]);
-    
-    // echo Yii::t('app', '{icon} 1715', ['icon' => FA::icon('mobile',['class' => 'mobilePhoneIcon'])]);
 
-    // echo Yii::t('app', '{icon} E-P 9.00-21.00', ['icon' => FA::icon('clock-o',['class' => 'clockIcon'])]);
-    
-    // echo Button::widget([
-    //     'encodeLabel' => false,
-    //     'label' => FA::i('unlock', ['class' => 'unlock']).'LOG OUT',
-    //     'options' => ['class' => 'btn-lg logOutButton hidden-xs'],
-    // ]);
-    // echo Button::widget([
-    //     'encodeLabel' => false,
-    //     'label' => 'LOG OUT',
-    //     'options' => ['class' => 'btn-lg logOutButton hidden-xs'],
-    // ]);
     echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
