@@ -126,6 +126,15 @@ class UserController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+    /**
+     * Finds the User loan based on its primary key value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param integer $user_id
+     * @return Search model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+
     protected function findUserLoans($user_id)
     {
         $searchModel = new LoanSearch();
