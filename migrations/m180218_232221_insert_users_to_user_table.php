@@ -29,7 +29,7 @@ class m180218_232221_insert_users_to_user_table extends Migration
     public function insertToUser($rows)
     {
 
-        $columnNameArray=['id', 'first_name', 'last_name', 'email', 'personal_code', 'phone', 'active', 'dead', 'lang'];
+        $columnNameArray=['user_id', 'first_name', 'last_name', 'email', 'personal_code', 'phone', 'active', 'dead', 'lang'];
 
         $insertCount = Yii::$app->db->createCommand()
                    ->batchInsert(

@@ -14,7 +14,7 @@ class m170911_093407_setup extends Migration
     public function safeUp()
     {
         $this->createTable('user', [
-            'id' => Schema::TYPE_PK,
+            'user_id' => Schema::TYPE_PK,
             'first_name' => Schema::TYPE_TEXT . ' NOT NULL',
             'last_name' => Schema::TYPE_TEXT . ' NOT NULL',
             'email' => Schema::TYPE_TEXT . ' NOT NULL',
