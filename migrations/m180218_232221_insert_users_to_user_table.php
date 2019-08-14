@@ -47,19 +47,4 @@ class m180218_232221_insert_users_to_user_table extends Migration
 
         return false;
     }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m180218_232221_insert_users_to_user_table cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

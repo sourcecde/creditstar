@@ -61,18 +61,4 @@ class m180218_232610_insert_loans_to_loan_table extends Migration
         return false;
     }
 
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m180218_232610_insert_loans_to_loan_table cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }
