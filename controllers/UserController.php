@@ -52,10 +52,20 @@ class UserController extends Controller
      */
     public function actionView($id)
     {
+        // $model = $this->findModel($id);
+        // $age = Yii::$app->myfunctions->getAgeFromPersonelCode($model->personal_code);
+        // return $this->render('view', [
+        //     'model' => $this->findModel($id),
+        // ]);
+
+        $loans = $this->findUserLoans($id);
+        $model = $this->findModel($id);
+        // $personal_code =  getAgeFromPersonelCode($model->personalCode);
 
         return $this->render('view', [
             'model' => $this->findModel($id),
-
+            'loans' => $loans,
+            // 'age' => $personal_code,
         ]);
     }
 
@@ -124,5 +134,20 @@ class UserController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+    protected function findUserLoans($user_id)
+    {
+        $searchModel = new LoanSearch();
 
+        $queryParams = [];
+        $queryParams['LoanSearch'] = [];
+        $queryParams['LoanSearch']['user_id'] = $user_id;
+
+        $dataProvider = $searchModel->search($queryParams);
+        $dataProvider->setPagination(false);
+
+        return [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider
+        ];
+    }
 }

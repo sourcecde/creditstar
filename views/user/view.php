@@ -44,5 +44,34 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ],
     ]) ?>
+    
+    <h1>User Loans:</h1>
+
+    <?= GridView::widget([
+        'dataProvider' => $loans['dataProvider'],
+        'filterModel' => $loans['searchModel'],
+        'showOnEmpty' => false,
+        'filterModel' => null,
+        'columns' => [
+            [
+                'class' => 'yii\grid\SerialColumn'
+            ],
+
+            'id',
+            'user_id',
+            'amount',
+            'interest',
+            'duration',
+            'start_date',
+            'end_date',
+            // 'campaign',
+            // 'status:boolean',
+
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'controller' => 'loan'
+            ],
+        ],
+    ]); ?>
 
 </div>
