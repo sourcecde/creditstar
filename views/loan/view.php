@@ -56,6 +56,22 @@ $this->params['breadcrumbs'][] = $this->title;
             ]) ?>
         </p>
 
+        <?= DetailView::widget([
+            'model' => $user,
+            'attributes' => [
+                'user_id',
+                'first_name:ntext',
+                'last_name:ntext',
+                'email:ntext',
+                'personal_code',
+                'phone',
+                'active:boolean',
+                'dead:boolean',
+                'lang:ntext',
+            ],
+            'template' => '<tr><th style="color:black;">{label}</th><td>{value}</td></tr>',
+        ]) ?>
+
 </div>
 
     

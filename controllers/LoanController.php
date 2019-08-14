@@ -60,9 +60,7 @@ class LoanController extends Controller
             'model' => $loanModel,
             'user' => $user
         ]);
-        // return $this->render('view', [
-        //     'model' => $this->findModel($id),
-        // ]);
+
     }
 
     /**
