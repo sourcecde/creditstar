@@ -53,10 +53,16 @@ class LoanController extends Controller
      */
     public function actionView($id)
     {
-
+        $loanModel = $this->findModel($id);
+        $userModel = new User();
+        $user = $userModel->findOne($loanModel->user_id);
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $loanModel,
+            'user' => $user
         ]);
+        // return $this->render('view', [
+        //     'model' => $this->findModel($id),
+        // ]);
     }
 
     /**
