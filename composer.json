@@ -5,6 +5,11 @@
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
+    "autoload":{
+        "files":[
+            "components/myFunctions.php"
+        ]
+    },
     "support": {
         "issues": "https://github.com/yiisoft/yii2/issues?state=open",
         "forum": "http://www.yiiframework.com/forum/",
