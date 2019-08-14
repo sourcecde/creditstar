@@ -1,0 +1,226 @@
+/*
+	Skyapp bootstrap Sass Theme
+	Author : Kemal Karaduman
+	Version: 0.0.1
+*/
+body {
+  font-family: Ubuntu; }
+
+.logo {
+  height: 30px; }
+  .logo .container .navbar-brand {
+    color: #ffffff; }
+
+.mobilePhoneIcon {
+  font-size: 21px;
+  color: #ffffff;
+  margin-top: 13px; }
+
+.clockIcon {
+  font-size: 19px;
+  margin-left: 40px; }
+
+.float-right {
+  float: right; }
+
+.logOutButton {
+  background: #FAAE26;
+  color: #ffffff;
+  float: right;
+  border-radius: 99px;
+  border: 3px solid #ffffff;
+  height: 31px;
+  margin-top: 11px;
+  line-height: 1px;
+  font-size: 11px;
+  text-align: right;
+  width: 102px; }
+
+.unlock {
+  font-size: 15px;
+  line-height: 0; }
+
+.rightTopText {
+  float: right;
+  margin-right: 17px;
+  margin-top: 16px; }
+
+.companyLogo {
+  width: 170px; }
+
+.menuLogoRow {
+  background: #ffffff;
+  height: 70px;
+  border-left: none;
+  border-right: none; }
+
+#w3 {
+  /*margin-left:55px;*/ }
+  #w3 li a {
+    text-decoration: none;
+    color: #7f6e6e;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-right: 14px; }
+
+.menuIcon {
+  color: #FDBE27;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 2.6;
+  padding-left: 12px; }
+
+.wrap .container {
+  padding: 0; }
+
+#w1 {
+  color: #ffffff; }
+
+.breadcrumb {
+  background: none;
+  padding-left: 60px;
+  padding-top: 22px; }
+  .breadcrumb li + li:before {
+    content: none; }
+  .breadcrumb li {
+    margin-left: 25px;
+    font-size: 15px; }
+
+.breadcrumbsWrap {
+  background: #f5f5f5; }
+
+.summary {
+  margin: auto;
+  display: inline-block;
+  /*vertical-align: bottom;*/
+  margin-bottom: -50px;
+  color: #888; }
+  .summary b {
+    margin: auto;
+    padding: auto; }
+
+.loan-index h1, .user-index h1 {
+  text-align: center;
+  font-weight: 100px; }
+.loan-index p, .user-index p {
+  float: right; }
+
+.btn-circle {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 5.37;
+  border-radius: 45px;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
+  border: 5px solid;
+  margin-bottom: 14px; }
+
+.loan-index, .user-index {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: 50px;
+  background-image: url(../img/backgroundimg.png);
+  background-repeat: no-repeat;
+  background-position: left top; }
+
+.table {
+  background-image: url(../img/borderImage.png);
+  background-repeat: repeat-x;
+  background-position: left top; }
+  .table td {
+    color: #888; }
+  .table a {
+    color: #888; }
+  .table thead tr th {
+    padding-top: 22px; }
+
+.title {
+  padding: 0; }
+
+.pagination li a {
+  border-radius: 40px !important;
+  border: 1px solid #fff !important;
+  margin-right: 16px;
+  background: #D85251;
+  width: 100px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  color: white !important;
+  text-align: center; }
+
+.active a {
+  background: #D85251 !important; }
+
+.prev span, .next span, .prev a, .next a {
+  border-radius: 40px !important;
+  border: 1px solid #fff !important;
+  margin-right: 16px;
+  background: #FAAC26 !important;
+  width: 100px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  color: white !important;
+  text-align: center; }
+
+.next a {
+  background: #FAAC26 !important;
+  margin-left: 16px !important; }
+
+@media only screen and (max-width: 767px) {
+  #w2-collapse {
+    background: #ddd;
+    position: absolute;
+    right: 0; }
+
+  #w1-collapse {
+    background: #ddd;
+    z-index: 99999;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0; }
+
+  .nav2 {
+    background: #ddd; } }
+@media only screen and (max-width: 1024px) {
+  #w3 {
+    /*margin-left:55px;*/ }
+    #w3 li a {
+      text-decoration: none;
+      color: #7f6e6e;
+      font-size: 25px;
+      line-height: 1.4;
+      margin-right: -19px; } }
+.navbar-toggle {
+  background: #222222; }
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+  color: #fff; }
+
+.navbar-collapse {
+  color: #fff; }
+
+tr:nth-child(-n+3) td {
+  color: #ddd !important; }
+
+tr:nth-child(n+4) td {
+  color: red !important; }
+
+tr:nth-child(n+6) td {
+  color: #FAAC34 !important; }
+
+tr:nth-child(n+8) td {
+  color: #888 !important; }
+
+.nav li a {
+  background: none !important; }
+
+/*# sourceMappingURL=style.css.map */
