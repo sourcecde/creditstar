@@ -52,20 +52,12 @@ class UserController extends Controller
      */
     public function actionView($id)
     {
-        // $model = $this->findModel($id);
-        // $age = Yii::$app->myfunctions->getAgeFromPersonelCode($model->personal_code);
-        // return $this->render('view', [
-        //     'model' => $this->findModel($id),
-        // ]);
-
         $loans = $this->findUserLoans($id);
         $model = $this->findModel($id);
-        // $personal_code =  getAgeFromPersonelCode($model->personalCode);
 
         return $this->render('view', [
             'model' => $this->findModel($id),
             'loans' => $loans,
-            // 'age' => $personal_code,
         ]);
     }
 
