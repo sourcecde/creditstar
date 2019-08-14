@@ -23,19 +23,7 @@ body {
 .float-right {
   float: right; }
 
-/*.logOutButton {
-  background: #FAAE26;
-  color: #ffffff;
-  float: right;
-  border-radius: 99px;
-  border: 3px solid #ffffff;
-  height: 31px;
-  margin-top: 11px;
-  line-height: 1px;
-  font-size: 11px;
-  text-align: right;
-  width: 102px; }*/
-  .logOutButton {
+.logOutButton {
   background: #FAAE26;
   color: #ffffff;
   float: right;
